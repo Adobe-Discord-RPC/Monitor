@@ -12,6 +12,10 @@
 
 Adobe Discord RPC 메인 프로그램의 실행을 관리하는 모니터링 프로그램입니다.
 
+설치 방법은 [홈페이지](https://adoberpc.hwahyang.space)를 참고 해 주세요.
+
 ## En
 
 A monitoring program that manages the execution of Adobe Discord RPC main program.
+
+Please refer to the [homepage](https://adoberpc.hwahyang.space) for installation instructions.
