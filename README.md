@@ -1,3 +1,9 @@
+# Warning!
+
+이 레포지토리는 [Adobe-Discord-RPC/Core](https://github.com/Adobe-Discord-RPC/Program-Core) 레포지토리로 통합되었습니다.
+
+This repository is integrated into the [Adobe-Discord-RPC/Core](https://github.com/Adobe-Discord-RPC/Program-Core) repository.
+
 # Adobe Discord RPC Program Monitor
 
 [![Title Image](https://adobe-discord-rpc.github.io/Adobe-Discord-RPC-Image/images/cover.png)](https://github.com/Adobe-Discord-RPC)
