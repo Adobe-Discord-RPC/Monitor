@@ -1,0 +1,15 @@
+{
+  "exitAlert": "Adobe Discord RPC is shutting down.",
+  "tray": {
+    "version": "version",
+    "homepage": "Homepage",
+    "discord": "Official Discord",
+    "checkUpdate": "Check for updates",
+    "programConfig": "Program Settings",
+    "exit": "Exit Program"
+  },
+  "connected_notification": {
+    "title": "Connected to account %USERNAME%.",
+    "body": "%TITLE% will be played."
+  }
+}

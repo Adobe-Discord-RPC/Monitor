@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Screen Loading... - Adobe Discord RPC</title>
+        <!-- Google Icon Font
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+        <!-- main.css -->
+        <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection"/>
+
+        <!-- Insert this line above script imports -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+        <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./js/materialize.min.js"></script>
+        <script type="text/javascript" src="./js/duplicate.js"></script>
+        <script type="text/javascript" src="./js/noConnectionAlert.js"></script>
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+    </head>
+
+    <body class="indigo lighten-4">
+    <!-- Main div S -->
+    <div class="container" id="bef" style="display: block;">
+        <div class="row">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)">
+                <div class="col s3"></div>
+                <div class="col s12">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <br />
+                                <center><div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></center>
+                                <p id="loading" style="text-align: center;">
+                                    <br />
+                                    데이터를 불러오고 있습니다.<br />
+                                    이 창이 오래 지속되면 <a href="javascript:void(0);" onClick="openLink('https://discord.gg/7MBYbERafX', false);">공식 서버</a>를 찾아주세요.
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="aft" style="display: none;">
+        <div class="row">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)">
+                <div class="col s3"></div>
+                <div class="col s12">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <h4 style="text-align: center;" id="Fail">서버 연결에 실패했습니다.</h4>
+                                <p style="text-align: center; display: none;" id="Reason0">인터넷 연결을 확인 해 주세요.</p>
+                                <p style="text-align: center; display: none;" id="Reason1">업데이트 서버에 접근 할 수 없습니다.<br />공식 서버를 방문 해 주세요.</p>
+                                <p style="text-align: center; display: none;" id="Reason21">'재시도'를 클릭 해 주세요</p>
+                                <p style="text-align: center; display: none;" id="Reason22">NONE</p>
+                                <!--<p style="text-align: center;">업데이트 확인 없이 실행할까요?</p>-->
+                            </div>
+                            <div class="card-action">
+                                <a id="Ignore" class="btn waves-effect waves-teal btn-flat red-text white left modal-trigger tooltipped" data-position="top" data-tooltip="업데이트를 확인하지 않습니다." href="javascript:void(0);" onClick="decided('Ignore');">
+                                    무시
+                                </a>
+                                <a id="Retry" class="btn waves-effect waves-teal btn-flat orange-text white left modal-trigger tooltipped" data-position="top" data-tooltip="서버 연결을 다시 시도합니다." href="javascript:void(0);" onClick="decided('Retry');">
+                                    재시도
+                                </a>
+                                <a id="Official" class="btn waves-effect waves-teal btn-flat blue-text white right modal-trigger tooltipped" data-position="top" data-tooltip="공식 디스코드 서버를 방문합니다." href="javascript:void(0);" onClick="openLink('https://discord.gg/7MBYbERafX', false);">
+                                    공식 서버
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="cls" style="display: none;">
+        <div class="row">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)">
+                <div class="col s3"></div>
+                <div class="col s12">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <!--<h4 style="text-align: center;">잠시만 기다려 주세요...</h4>-->
+                                <br />
+                                <center><div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></center>
+                                <p style="text-align: center;" id="processing">
+                                    <br />요청하신 내용을 처리하고 있습니다.<br />
+                                    이 창이 오래 지속되면 <a href="javascript:void(0);" onClick="openLink('https://discord.gg/7MBYbERafX', false);">공식 서버</a>를 찾아주세요.<br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main div E -->
+
+    <!-- Modal Structure S -->
+    <div id="linkOpened" class="modal">
+        <div class="modal-content">
+            <h4 id="lo-title">브라우저를 확인하세요!</h4>
+            <p id="lo-description0">기본 브라우저로 링크가 열렸습니다.</p>
+            <p style="word-break: keep-all;" id="lo-description1">브라우저가 열리지 않았다면, <a id="linkOpenHref" href="javascript:void(0);" onClick="openLink('undefined');">여기</a>를 클릭하시거나 아래의 링크를 복사하세요.</p>
+            <p class="tooltipped" data-position="bottom" data-tooltip="Ctrl + C를 눌러 복사할 수 있습니다." id="lo-tooltip"><input id="linkOpenURL" value="에러: 잘못된 접근이거나, 연결되는 링크가 없을 수도 있습니다." type="text" class="validate" readonly></p>
+        </div>
+        <div class="modal-footer">
+            <a id="lo-close" class="btn modal-close waves-effect waves-teal btn-flat blue-text white right modal-trigger" href="javascript:void(0);">
+                닫기
+            </a>
+        </div>
+    </div>
+
+    <div id="linkNF" class="modal">
+        <div class="modal-content">
+            <h4 id="nf-title">에러!</h4>
+            <p id="nf-description">제공된 입력값이 없습니다!<br />잘못된 접근이거나, 연결되는 링크가 없을 수도 있습니다.</p>
+        </div>
+        <div class="modal-footer">
+            <a id="nf-close" class="btn modal-close waves-effect waves-teal btn-flat blue-text white right modal-trigger" href="javascript:void(0);">
+                닫기
+            </a>
+        </div>
+    </div>
+
+    <div id="cannotCancel" class="modal">
+        <div class="modal-content">
+            <h4 id="cc-title">알림!</h4>
+            <p id="cc-description">현재 창에서는 프로그램 종료를 하실 수 없습니다.</p>
+        </div>
+        <div class="modal-footer">
+            <a id="cc-close" class="btn modal-close waves-effect waves-teal btn-flat blue-text white right modal-trigger" href="javascript:void(0);">
+                닫기
+            </a>
+        </div>
+    </div>
+    <!-- Modal Structure E -->
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "adobe-discord-rpc_monitor",
+  "version": "1.0.0-pre1",
+  "description": "Adobe Discord RPC Program Monitor",
+  "main": "src/app.js",
+  "scripts": {
+    "update-dependencies": "chcp 65001 && npx ncu -u && npm i -D --save",
+    "rebuild": "chcp 65001 && electron-rebuild -f",
+    "build": "chcp 65001 && node package.js",
+    "start": "chcp 65001 && electron .",
+    "core": "chcp 65001 && electron . --core"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adobe-Discord-RPC/Monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adobe-Discord-RPC/Monitor/issues"
+  },
+  "homepage": "https://adobe.discordrpc.org",
+  "dependencies": {
+    "check-internet-connected": "^2.0.5",
+    "colors": "^1.4.0",
+    "moment": "^2.29.1",
+    "open": "^8.0.8",
+    "regedit": "^3.0.3",
+    "request": "^2.88.2",
+    "socket.io": "^4.0.2",
+    "socket.io-client": "^4.0.2",
+    "waait": "^1.0.5"
+  },
+  "devDependencies": {
+    "electron": "^12.0.7",
+    "electron-packager": "^15.2.0",
+    "electron-rebuild": "^2.3.5",
+    "electron-winstaller": "^5.0.0"
+  },
+  "author": "Adobe Discord RPC Team",
+  "license": "GPL-3.0"
+}

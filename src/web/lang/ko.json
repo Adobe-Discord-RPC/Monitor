@@ -1,0 +1,72 @@
+{
+  "processing": "<br />요청하신 내용을 처리하고 있습니다.<br />이 창이 오래 지속되면 <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">공식 서버</a>를 찾아주세요.<br />",
+  "modal": {
+    "linkOpened": {
+      "title": "브라우저를 확인하세요!",
+      "description": [
+        "기본 브라우저로 링크가 열렸습니다.",
+        "브라우저가 열리지 않았다면, <a id=\"linkOpenHref\" href=\"javascript:void(0);\" onClick=\"openLink('undefined');\">여기</a>를 클릭하시거나 아래의 링크를 복사하세요."
+      ],
+      "input": {
+        "tooltip": "Ctrl + C를 눌러 복사할 수 있습니다.",
+        "value": "에러: 잘못된 접근이거나, 연결되는 링크가 없을 수도 있습니다."
+      },
+      "close": "닫기"
+    },
+    "linkNF": {
+      "title": "에러!",
+      "description": "제공된 입력값이 없습니다!<br />잘못된 접근이거나, 연결되는 링크가 없을 수도 있습니다.",
+      "close": "닫기"
+    },
+    "cannotCancel": {
+      "title": "알림!",
+      "description": "현재 창에서는 프로그램 종료를 하실 수 없습니다.",
+      "close": "닫기"
+    }
+  },
+  "noConnectionAlert": {
+    "htmlTitle": "서버 연결에 실패했습니다. - Adobe Discord RPC",
+    "title": "서버 연결에 실패했습니다.",
+    "loading": "<br />데이터를 불러오고 있습니다.<br />이 창이 오래 지속되면 <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">공식 서버</a>를 찾아주세요.<br />",
+    "connectFail": "서버 연결에 실패했습니다.",
+    "Reason0": "인터넷 연결을 확인 해 주세요.",
+    "Reason1": "업데이트 서버에 접근 할 수 없습니다.<br />공식 서버를 방문 해 주세요.",
+    "Reason21": "'재시도'를 클릭 해 주세요.",
+    "connectIgnore": "무시",
+    "connectIgnoreTooltip": "업데이트를 확인하지 않습니다.",
+    "connectRetry": "재시도",
+    "connectRetryTooltip": "서버 연결을 다시 시도합니다.",
+    "connectOfficial": "공식 서버",
+    "connectOfficialTooltip": "공식 디스코드 서버를 방문합니다."
+  },
+  "UpdateAlert": {
+    "htmlTitle": "새 버전이 존재합니다! - Adobe Discord RPC",
+    "loading": "<br />데이터를 불러오고 있습니다.<br />이 창이 오래 지속되면 <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">공식 서버</a>를 찾아주세요.<br />",
+    "title": "새로운 버전이 존재합니다!",
+    "description_top": "아래의 프로그램을 최신 버전으로 업데이트 할 수 있습니다.<br />",
+    "list": [
+      "<a id=\"Core\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"클릭하여 업데이트 로그를 확인합니다.\" href=\"javascript:void(0);\" onClick=\"alert('문제가 발생했습니다.'); openLink('undefined', false);\">프로그램 코어</a>",
+      "<a id=\"Monitor\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"클릭하여 업데이트 로그를 확인합니다.\" href=\"javascript:void(0);\" onClick=\"alert('문제가 발생했습니다.'); openLink('undefined', false);\">프로그램 모니터</a>",
+      "<a id=\"PList\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"클릭하여 업데이트 로그를 확인합니다.\" href=\"javascript:void(0);\" onClick=\"alert('문제가 발생했습니다.'); openLink('undefined', false);\">지원 프로그램 목록</a>",
+      "<a id=\"Configurator\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"클릭하여 업데이트 로그를 확인합니다.\" href=\"javascript:void(0);\" onClick=\"alert('문제가 발생했습니다.'); openLink('undefined', false);\">프로그램 Configurator</a>",
+      "<a id=\"Controller\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"클릭하여 업데이트 로그를 확인합니다.\" href=\"javascript:void(0);\" onClick=\"alert('문제가 발생했습니다.'); openLink('undefined', false);\">프로그램 컨트롤러</a>"
+    ],
+    "description_bottom": "<br />업데이트를 진행할까요?",
+    "autoUpdate": "자동 업데이트",
+    "autoUpdateTooltip": "자체 업데이터를 통해 업데이트합니다.",
+    "manualUpdate": "수동 업데이트",
+    "manualUpdateTooltip": "프로그램을 수동으로 재설치합니다.",
+    "openCancel": "지금 업데이트 안함",
+    "openCancelTooltip": "지금 업데이트를 하지 않습니다.",
+    "cancel": {
+      "title": "알림!",
+      "description": "구버전에서 발생하는 문제는 지원 대상이 아닙니다!<br />따라서, 저희는 업데이트를 권장하고 있습니다.<br/>정말로 종료할까요?",
+      "official_discord": "필요하실 경우, <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">공식 서버</a>를 찾아주세요.",
+      "later": "다음번에 알림",
+      "laterTooltip": "다음번 실행 때 다시 알립니다.",
+      "skip": "이 버전 건너뛰기",
+      "skipTooltip": "이 버전에 대한 알림을 다시 받지 않습니다.",
+      "back": "화면으로 돌아가기"
+    }
+  }
+}

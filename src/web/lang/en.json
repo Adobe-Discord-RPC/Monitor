@@ -1,0 +1,70 @@
+{
+  "loading": "<br />The latest data is being loaded.<br />If this screen lasts for a long time, please visit <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">our official server</a>.<br />",
+  "processing": "<br />We are processing your request.<br />If this screen lasts for a long time, please visit <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">our official server</a>.<br />",
+  "modal": {
+    "linkOpened": {
+      "title": "Check out your browser!",
+      "description": [
+        "Link opened to default browser.",
+        "If your browser hasn't opened, <a id=\"linkOpenHref\" href=\"javascript:void(0);\" onClick=\"openLink('undefined');\">click here</a> or copy the link below."
+      ],
+      "input": {
+        "tooltip": "You can copy it by pressing Ctrl + C.",
+        "value": "ERROR: This may be an invalid approach, or there may be no link to it."
+      },
+      "close": "Close"
+    },
+    "linkNF": {
+      "title": "ERROR!",
+      "description": "No input value provided!<br />This may be an invalid approach, or there may be no link to it.",
+      "close": "Close"
+    },
+    "cannotCancel": {
+      "title": "Warning",
+      "description": "You cannot exit the program in the current window.",
+      "close": "Close"
+    }
+  },
+  "noConnectionAlert": {
+    "htmlTitle": "Failed to connect to server. - Adobe Discord RPC",
+    "connectFail": "Failed to connect to server.",
+    "Reason0": "Please check the internet connection.",
+    "Reason1": "Unable to access update server.<br />Please visit our official server.",
+    "Reason21": "Please click \"Retry\".",
+    "connectIgnore": "Ignore",
+    "connectIgnoreTooltip": "Do not check for updates.",
+    "connectRetry": "Retry",
+    "connectRetryTooltip": "Try connecting to the server again.",
+    "connectOfficial": "Official discord",
+    "connectOfficialTooltip": "Visiting our official discord server."
+  },
+  "UpdateAlert": {
+    "htmlTitle": "New updates are available! - Adobe Discord RPC",
+    "title": "New updates are available!",
+    "description_top": "You can update the programs below to the latest version.<br />",
+    "list": [
+      "<a id=\"Core\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"You can click to view the update log.\" href=\"javascript:void(0);\" onClick=\"alert('An error has occurred.'); openLink('undefined', false);\">Program Core</a>",
+      "<a id=\"Monitor\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"You can click to view the update log.\" href=\"javascript:void(0);\" onClick=\"alert('An error has occurred.'); openLink('undefined', false);\">Program Monitor</a>",
+      "<a id=\"PList\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"You can click to view the update log.\" href=\"javascript:void(0);\" onClick=\"alert('An error has occurred.'); openLink('undefined', false);\">Supporting Program List</a>",
+      "<a id=\"Configurator\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"You can click to view the update log.\" href=\"javascript:void(0);\" onClick=\"alert('An error has occurred.'); openLink('undefined', false);\">Program Configurator</a>",
+      "<a id=\"Controller\" style=\"display: none;\" class=\"tooltipped\" data-position=\"bottom\" data-tooltip=\"You can click to view the update log.\" href=\"javascript:void(0);\" onClick=\"alert('An error has occurred.'); openLink('undefined', false);\">Program Controller</a>"
+    ],
+    "description_bottom": "<br />Do you want to proceed with the update?",
+    "autoUpdate": "Auto Update",
+    "autoUpdateTooltip": "Update through Configurator.",
+    "manualUpdate": "Manual Update",
+    "manualUpdateTooltip": "Manually reinstall the program.",
+    "openCancel": "Not now",
+    "openCancelTooltip": "not updating right now.",
+    "cancel": {
+      "title": "Warning",
+      "description": "Problems with older versions are not supported.<br />Therefore, we are recommending an update.<br/>Are you sure you want to continue?",
+      "official_discord": "If You need, please visit <a href=\"javascript:void(0);\" onClick=\"openLink('https://discord.gg/7MBYbERafX', false);\">our official server</a>.",
+      "later": "Let me know next time",
+      "laterTooltip": "We'll let you know next time.",
+      "skip": "Skip this version",
+      "skipTooltip": "You will not be notified of this version again.",
+      "back": "Back"
+    }
+  }
+}
